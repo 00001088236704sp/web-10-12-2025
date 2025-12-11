@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      <h1>CALCULATION IN HTML</h1
+      <input type="number" id="primeiroNumero" <input>
+
+
+
+
+
+
+
+
+</body>
+
+      <script>
+            
+    const inputPrimeiroNumero = document.getElementById('primeiroNumero');
+    const inputSegundoNumero = document.getElementById('segundoNumero');
+    const buttonSomar = document.getElementById('btnSomar');
+    const buttonSub = document.getElementById('btnSub');
+    const buttonMult = document.getElementById('btnMult');
+    const buttonDiv = document.getElementById('btnDiv');
+
+
+    buttonSomar.addEventListener('click', () => {
+        const primeiroNumero = Number(inputPrimeiroNumero.value);
+        const segundoNumero = Number(inputSegundoNumero.value);
+        alert(primeiroNumero + segundoNumero);
+
+    });
+
+    buttonDiv.addEventListener('click', () => {
+        const PrimeiroNumero = Number(inputPrimeiroNumero.value);
+        const SegundoNumero = Number(inputSegundoNumero.value);
+        alert(PrimeiroNumero/SegundoNumero);
+    })
+
+    buttonMult.addEventListener('click',() =>{
+        const PrimeiroNumero = Number(inputPrimeiroNumero.value)
+        const SegundoNumero = Number(inputSegundoNumero.value)
+        if (segundoNumero == 0){
+        console.log("por zero nao douglas!!")
+        } else {
+                alert(PrimeiroNumero*SegundoNumero);
+        }
+
+
+    })
+
+    buttonSub.addEventListener('click',() =>{
+    const primeiroNumero = Number(inputPrimeiroNumero.value);
+    const segundoNumero = Number(inputSegundoNumero.value);
+    alert(primeiroNumero - segundoNumero);  
+
+
+})
+
+      </script>
+
+
+</html>
